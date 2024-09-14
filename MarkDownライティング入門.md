@@ -279,8 +279,7 @@ A footnote can also have multiple lines[^2].
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
-[!TIP]
-
+> [!TIP]
 > Helpful advice for doing things better or more easily.
 
 > [!IMPORTANT]
