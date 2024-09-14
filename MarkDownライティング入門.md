@@ -254,6 +254,8 @@ html を指定するとコードに色がつく
 
 ### 脚注
 
+ページの最下部に参照元が表示される。
+
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].
@@ -290,3 +292,84 @@ A footnote can also have multiple lines[^2].
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+### Markdown のフォーマットの無視
+
+\*で囲んでも太字にならない。
+Let's rename \*our-new-project\* to \*our-old-project\*.
+
+```md
+Let's rename \*our-new-project\* to \*our-old-project\*.
+```
+
+### 四角で囲む
+
+| 私達のカラダには「体内時計」をつかさどるタンパク質があります。それが脂肪を溜め込んだり積極的に燃焼したりと、時間によって働き方に違いがあることがわかっています。 |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+```
+| 私達のカラダには「体内時計」をつかさどるタンパク質があります。それが脂肪を溜め込んだり積極的に燃焼したりと、時間によって働き方に違いがあることがわかっています。 |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+```
+
+| この文章は左寄せになります。　 |
+| :----------------------------- |
+
+| この文章は中央によります。 |
+| :------------------------- |
+
+| この文章は右に寄ります。 |
+| :----------------------- |
+
+```
+| この文章は左寄せになります。　 |
+| :----------------------------- |
+
+| この文章は中央によります。 |
+| :------------------------- |
+
+| この文章は右に寄ります。 |
+| :----------------------- |
+```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+````
+
+### アコーディオン
+
+<details>
+ <summary>Summary Goes Here</summary>
+ ...this is hidden, collapsable content...
+</details>
+<br>
+デフォルトで OPEN も可能
+
+<details>
+ <summary>Summary Goes Here</summary>
+ ...this is hidden, collapsable content...
+</details>
+
+```md
+<details>
+ <summary>Summary Goes Here</summary>
+ ...this is hidden, collapsable content...
+</details>
+<details open>
+ <summary>Summary Goes Here</summary>
+ ...this is hidden, collapsable content...
+</details>
+```
