@@ -32,6 +32,12 @@ _イタリック_
 **_太イタリック_**
 ```
 
+==マーカー==
+
+```
+==マーカー==
+```
+
 ### リンク
 
 [github](https://github.com/)
@@ -64,8 +70,8 @@ _イタリック_
 - 箇条書き
 
 <ul>
-	<li></li>
-	<li></li>
+ <li></li>
+ <li></li>
 </ul>
 ```
 
@@ -73,8 +79,8 @@ _イタリック_
 2. 箇条書き
 
 <ol>
-	<li></li>
-	<li></li>
+ <li></li>
+ <li></li>
 </ol>
 ```
 1. 箇条書き
@@ -99,7 +105,7 @@ _イタリック_
 
 ```javascript
 const hello = (name) => {
-	console.log(`こんにちは${name}さん`);
+ console.log(`こんにちは${name}さん`);
 };
 
 hello('yamada');
@@ -111,7 +117,7 @@ hello('yamada');
 ````md
 / ```javascript
 const hello = (name) => {
-	console.log(`こんにちは${name}さん`);
+ console.log(`こんにちは${name}さん`);
 };
 
 hello('yamada');
@@ -198,7 +204,7 @@ GFM では表の作成が可能。
 ### 拡張自動リンク記法
 
 GFM ではリンクを<>で囲まなくても良い。
-これは https://google.com/ です。
+これは <https://google.com/> です。
 `これは https://google.com/ です。`
 
 ### 絵文字記法
@@ -216,18 +222,18 @@ html を指定するとコードに色がつく
 
 ```html
 <main class="main-contents">
-	<div class="container">
-		<h1>タイトル</h1>
-	</div>
+ <div class="container">
+  <h1>タイトル</h1>
+ </div>
 </main>
 ```
 
 ````
 ```html
 <main class="main-contents">
-	<div class="container">
-		<h1>タイトル</h1>
-	</div>
+ <div class="container">
+  <h1>タイトル</h1>
+ </div>
 </main>
 ````
 
