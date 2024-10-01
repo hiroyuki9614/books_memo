@@ -17,3 +17,30 @@ describe('add(a, b)', function () {
 		});
 	});
 });
+
+describe('Function tests', function () {
+	describe('succ', function () {
+		it('should increment the input by 1', function () {
+			expect(succ(1)).to.equal(2);
+			expect(succ(0)).to.equal(1);
+			expect(succ(-1)).to.equal(0);
+		});
+	});
+
+	describe('map', function () {
+		it('should apply the transform function to each element of the array', function () {
+			const doubleMap = map((x) => x * 2);
+			expect(doubleMap([1, 2, 3])).to.eql([2, 4, 6]);
+		});
+
+		it('should work with the succ function', function () {
+			const succMap = map(succ);
+			expect(succMap([1, 2, 3])).to.eql([2, 3, 4]);
+		});
+
+		it('should return an empty array when given an empty array', function () {
+			const doubleMap = map((x) => x * 2);
+			expect(doubleMap([])).to.eql([]);
+		});
+	});
+});
