@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/expect.js": "^0.3.32",
-    "expect.js": "^0.3.1"
+    "expect.js": "^0.3.1",
+    "mocha": "^10.7.3"
   }
 }
