@@ -1,3 +1,5 @@
+var expect = require('../node_modules/expect.js/index.js');
+
 // succ 関数を定義
 const succ = (x) => x + 1;
 var map = (transform) => {
@@ -28,3 +30,5 @@ console.log(map(succ)([1, 3, 5]));
 
 // あるいは、前述の map 関数を使用する:
 // javascriptCopymap(succ)([1, 3, 5])
+
+expect(succ(1)).to.eql(2);
